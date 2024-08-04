@@ -1,0 +1,176 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment 1 - EE1030}
+\author{ee24btech11018 - D. Swaraj Sharma}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section*{\textbf{Section-B} // \textbf{JEE Main} / \textbf{AIEEE}}
+
+\begin{enumerate}[label=\textcolor{magenta}{\arabic*.}]
+\newcommand{\question}[6]{
+	 #1 \textcolor {magenta}{\hfill #2}\\
+\begin{minipage}{0.2\textwidth}
+(a) #3 \\
+(c) #5 \\
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+(b) #4 \\
+(d) #6 \\
+\end{minipage}
+
+}
+
+\item \question{If $ 1, \log_9 (3^{1-x} +2), \log_3 (4.3^x -1$ are in A.P then $x$ equals}{[2002]}
+  {$\log_1 4$}
+  {$1-\log_3 4$}
+  {$1-\log_4 3$}
+  {$\log_4 3$}
+
+\item \question{$l, m, n$ are the $p^{th}, q^{th}$ and $r^{th}$ term of a G.P. all positive, then $\left|\begin{matrix} \log l & p & 1 \\ \log m & q & 1 \\ \log n & r & 1 \end{matrix}\right|$ equals}{[2002]}
+{1}
+{2}
+{1}
+{0}
+
+\item \question{The value of $2^{\frac{1}{4}} . 4^{\frac{1}{8}} . 8^{\frac{1}{16}} \ldots \infty$ is}{[2002]}
+  {1}
+  {2}
+  {3/2}
+  {4}
+
+\item \question{Fifth term of a GP is 2, then the product of its 9 terms is}{[2002]}
+  {256}
+  {512}
+  {1024}
+  {none of these}
+
+\item \question{Sum of infinite number of terms of a GP is 20 and sum of their square is 100. The common ratio of GP is}{[2002]}
+  {5}
+  {3/5}
+  {8/5}
+  {1/5}
+
+\item \question{$1^{3}-2^{3}+3^{3}-4^{3}+...
++9^{3}=$}{[2002]}
+  {425}
+  {-425}
+  {475}
+  {-475}
+
+\item \question{The sum of the series \\ $\frac{1}{1.2}-\frac{1}{2.3}+\frac{1}{3.4}\cdots \text{ up to } \infty$ is equal to}{[2003]}
+  {$\log_e (\frac{4}{e})$}
+  {2$\log_e 2$}
+  {$\log_e 2-1$}
+  {$\log_e 2$}
+
+\item \question{If $S_n = \sum\limits_{r=0}^{n} \frac{1}{{}^{n}C_{r}}$ and $t_n = \sum\limits_{r=0}^{n} \frac{r}{{}^{n}C_{r}}$, then $\frac{t_n}{S_n}$ is equal to}{[2004]}
+  {$\frac{2n-1}{2}$}
+  {$\frac{1}{2}n-1$}
+  {$n-1$}
+  {$\frac{1}{2}n$}
+
+\item \question{Let $T_r$ be the rth term of an A.P. whose first term is a and common difference is $d$. If for some positive integers $m,n, m\neq n, T_m = \frac{1}{n}$ and $T_n = \frac{1}{m}$, then $a-d$ equals}{[2004]}
+  {$\frac{1}{m}+\frac{1}{n}$}
+  {1}
+  {$\frac{1}{mn}$}
+  {0}
+
+\item \question{The sum of the first $n$ terms of the series $1^2+2.2^2+3^2+2.4^2+5^2+2.6^2+\cdots$ is $\frac{n(n+1)^2}{2}$ when $n$ is even. When $n$ is odd the sum is}{[2004]}
+  {$\left[\frac{n(n+1)}{2}\right]^2$}
+  {$\frac{n^2(n+1)}{2}$}
+  {$\frac{n(n+1^2}{4}$}
+  {$\frac{3n(n+1)}{2}$}
+
+\item \question{The sum of series $\frac{1}{2!}+\frac{1}{4!}+\frac{1}{6!}+\cdots$ is}{[2004]}
+  {$\frac{(e^2-2)}{e}$}
+  {$\frac{n^2(n+1)}{2}$}
+  {$\frac{n(n+1)^2}{2e}$}
+  {$\frac{(e^2-1)}{2}$}
+
+\item \question{If the coefficients of rth, $(r+1)$th, and $(r+2)$th terms in the bionomial expansion of $(1+y)^m$ are in A.P., then $m$ and $r$ satisfy the equation\\} {[2005]}
+  {$m^2-m(4r-1)+4r^2-2=0$}
+  {$m^2-m(4r+1)+4r^2+2=0$}
+  {$m^2-m(4r+1)+4r^2-2=0$}
+  {$m^2-m(4r-1)+4r^2+2=0$}
+
+\item \question{If $x$ = $\sum\limits_{n=0}^{\infty}a^n$, $y$ = $\sum\limits_{n=0}^{\infty}b^n$, $z$ = $\sum\limits_{n=0}^{\infty}c^n$ where $a,b,c$ are in A.P and $|a|<1,|b|<1,|c|<1$ then $x,y,z$ are in}{[2005]}
+  {G.P.}
+  {A.P.}
+  {Arithmetic - Geometric Progression}
+  {H.P.}
+
+\item \question{The sum of the series $1+\frac{1}{4.2!}+\frac{1}{16.4!}+\frac{1}{64.6!}+\cdots \infty is$}{[2005]}
+  {$\frac{e-1}{\sqrt{e}}$}
+  {$\frac{e+1}{\sqrt{e}}$}
+  {$\frac{e-1}{2\sqrt{e}}$}
+  {$\frac{e+1}{2\sqrt{e}}$}
+
+\item \question{Let $a_1, a_2, a_3 \cdots$ be terms on A.P. If $\frac{a_1+a_2+\cdots a_p}{a_1+a_2+\cdots a_q}= \frac{p^2}{q^2},p \neq q$, then $\frac{a_6}{a_{21}}$ equals}{[2006]}
+  {$\frac{41}{11}$}
+  {$\frac{7}{2}$}
+  {$\frac{2}{7}$}
+  {$\frac{11}{41}$}
+
+
+
+
+\end{enumerate}
+
+\end{document}
