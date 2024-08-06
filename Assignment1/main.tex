@@ -1,0 +1,242 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment 1 - EE1030}
+\author{ee24btech11018 - D. Swaraj Sharma}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{\textbf{Section-B} // \textbf{JEE Main} / \textbf{AIEEE}}
+
+\begin{enumerate}[label={\arabic*.}]
+
+
+\item {If $ 1, \log_9 \brak{3^{1-x} +2}, \log_3 \brak{4\cdot3^x -1}$ are in A.P then $x$ equals}
+{\hfill{\sbrak{2002}}}
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+\item  {$\log_3 4$}
+ \item {$1-\log_3 4$}
+ \item {$1-\log_4 3$}
+ \item {$\log_4 3$}
+\end{multicols}
+\end{enumerate}
+\item {$l, m, n$ are the $p^{th}, q^{th}$ and $r^{th}$ term of a G.P. all positive, then $\mydet{\log l & p & 1 \\ \log m & q & 1 \\ \log n & r & 1 }$ equals}
+{\hfill{\sbrak{2002}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+	\begin{multicols}{2}
+\item{$1$}
+\item{$2$}
+\item{$1$}
+\item{$0$}
+	\end{multicols}
+\end{enumerate}
+
+\item {The value of $2^{\frac{1}{4}}\cdot 4^{\frac{1}{8}}\cdot 8^{\frac{1}{16}} \ldots \infty$ is}
+{\hfill{\sbrak{2002}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+	\begin{multicols}{2}
+\item  {$1$}
+\item  {$2$}
+\item  {$\frac{3}{2}$}
+\item  {$4$}
+	\end{multicols}
+\end{enumerate}
+
+\item {Fifth term of a GP is $2$, then the product of its $9$ terms is}
+{\hfill{\sbrak{2002}}}
+\begin{enumerate}[label={\brak{\alph*}}]		\begin{multicols}{2}
+
+\item  {$256$}
+\item  {$512$}
+\item  {$1024$}
+\item  {none of these}
+		\end{multicols}
+\end{enumerate}
+
+\item {Sum of infinite number of terms of a GP is $20$ and sum of their square is $100$. The common ratio of GP is}
+{\hfill{\sbrak{2002}}} 
+\begin{enumerate}[label={\brak{\alph*}}]		\begin{multicols}{2}
+
+\item  {$5$}
+\item  {$\frac{3}{5}$}
+\item  {$\frac{8}{5}$}
+\item  {$\frac{1}{5}$}
+\end{multicols}
+\end{enumerate} 
+
+\item {$1^{3}-2^{3}+3^{3}-4^{3}+...
++9^{3}=$}
+{\hfill{\sbrak{2002}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+\item  {$425$}
+\item  {$-425$}
+\item  {$475$}
+\item  {$-475$}
+	\end{multicols}
+\end{enumerate}
+
+\item {The sum of the series \\ $\frac{1}{1\cdot2}-\frac{1}{2\cdot3}+\frac{1}{3\cdot4}\cdots \text{ up to } \infty$ is equal to} 
+{\hfill{\sbrak{2003}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+			\begin{multicols}{2}
+\item  {$\log_e \brak{\frac{4}{e}}$}
+\item  {2$\log_e 2$}
+\item  {$\log_e 2-1$}
+\item  {$\log_e 2$}
+	\end{multicols}
+\end{enumerate}
+
+\item {If $S_n = \sum\limits_{r=0}^{n} \frac{1}{\comb{n}{r}}$ and $t_n = \sum\limits_{r=0}^{n} \frac{r}{\comb{n}{r}}$, then $\frac{t_n}{S_n}$ is equal to}
+{\hfill{\sbrak{2004}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+
+\item  {$\frac{2n-1}{2}$}
+\item  {$\frac{1}{2}n-1$}
+\item  {$n-1$}
+\item  {$\frac{1}{2}n$}
+	\end{multicols}
+\end{enumerate}
+
+\item {Let $T_r$ be the $r^{th}$ term of an A.P. whose first term is a and common difference is $d$. If for some positive integers $m,n, m\neq n, T_m = \frac{1}{n}$ and $T_n = \frac{1}{m}$, then $a-d$ equals} 
+{\hfill{\sbrak{2004}}}
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+
+\item  {$\frac{1}{m}+\frac{1}{n}$}
+\item  {$1$}
+\item  {$\frac{1}{mn}$}
+\item  {$0$}
+	\end{multicols}
+\end{enumerate}
+
+\item {The sum of the first $n$ terms of the series $1^2+2\cdot2^2+3^2+2\cdot4^2+5^2+2\cdot6^2+\cdots$ is $\frac{n\brak{n+1}^2}{2}$ when $n$ is even. When $n$ is odd the sum is}
+{\hfill{\sbrak{2004}}}
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+
+\item  {$\sbrak{\frac{n\brak{n+1}}{2}}^2$}
+\item  {$\frac{n^2\brak{n+1}}{2}$}
+\item  {$\frac{n\brak{n+1}^2}{4}$}
+\item  {$\frac{3n\brak{n+1}}{2}$}
+	\end{multicols}
+\end{enumerate}
+
+\item {The sum of series $\frac{1}{2!}+\frac{1}{4!}+\frac{1}{6!}+\cdots$ is}
+{\hfill{\sbrak{2004}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+
+\item  {$\frac{\brak{e^2-2}}{e}$}
+\item  {$\frac{n^2\brak{n+1}}{2}$}
+\item  {$\frac{n\brak{n+1}^2}{2e}$}
+\item  {$\frac{\brak{e^2-1}}{2}$}
+	\end{multicols}
+\end{enumerate}
+
+\item {If the coefficients of $r^{th}, \brak{r+1}^{th}$, and $\brak{r+2}^{th}$ terms in the bionomial expansion of $\brak{1+y}^m$ are in A.P., then $m$ and $r$ satisfy the equation}
+
+{\hfill{\sbrak{2005}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+
+\item  {$m^2-m\brak{4r-1}+4r^2-2=0$}
+\item  {$m^2-m\brak{4r+1}+4r^2+2=0$}
+\item  {$m^2-m\brak{4r+1}+4r^2-2=0$}
+\item  {$m^2-m\brak{4r-1}+4r^2+2=0$}
+
+\end{enumerate}
+
+\item {If $x$ = $\sum\limits_{n=0}^{\infty}a^n$, $y$ = $\sum\limits_{n=0}^{\infty}b^n$, $z$ = $\sum\limits_{n=0}^{\infty}c^n$ where $a,b,c$ are in A.P and $\abs{a}<1,\abs{b}<1,\abs{c}<1$ then $x,y,z$ are in}
+{\hfill{\sbrak{2005}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+
+\item  {G.P.}
+\item  {A.P.}
+\item  {Arithmetic - Geometric Progression}
+\item  {H.P.}
+
+\end{enumerate}
+
+\item {The sum of the series $1+\frac{1}{4\cdot2!}+\frac{1}{16\cdot4!}+\frac{1}{64\cdot6!}+\cdots  \infty$ is}
+{\hfill{\sbrak{2005}}} 
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+
+\item  {$\frac{e-1}{\sqrt{e}}$}
+\item  {$\frac{e+1}{\sqrt{e}}$}
+\item  {$\frac{e-1}{2\sqrt{e}}$}
+\item  {$\frac{e+1}{2\sqrt{e}}$}
+	\end{multicols}
+\end{enumerate}
+
+\item {Let $a_1, a_2, a_3 \cdots$ be terms on A.P. If $\frac{a_1+a_2+\cdots a_p}{a_1+a_2+\cdots a_q}= \frac{p^2}{q^2},p \neq q$, then $\frac{a_6}{a_{21}}$ equals}
+{\hfill{\sbrak{2006}} }
+\begin{enumerate}[label={\brak{\alph*}}]
+		\begin{multicols}{2}
+
+\item  {$\frac{41}{11}$}
+\item  {$\frac{7}{2}$}
+\item  {$\frac{2}{7}$}
+\item  {$\frac{11}{41}$}
+	\end{multicols}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
