@@ -1,7 +1,15 @@
-%iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -17,8 +25,8 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
-%\def\inputGnumericTable{}                                 
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
 \usepackage{array}                                            
@@ -28,24 +36,8 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{float}
 
 \usepackage{multicol}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{example}{Example}[section]
-\newtheorem{definition}[problem]{Definition}
-\newcommand{\BEQA}{\begin{eqnarray}}
-\newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
 
 % Marks the beginning of the document
 \begin{document}
@@ -54,19 +46,19 @@
 
 \title{Assignment 1 - EE1030}
 \author{ee24btech11018 - D. Swaraj Sharma}
-\maketitle
-\newpage
-\bigskip
-
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 
 \section{\textbf{Section-B} // \textbf{JEE Main} / \textbf{AIEEE}}
 
-\begin{enumerate}[label={\arabic*.}]
-%minor edit
 
-\item {If $ 1, \log_9 \brak{3^{1-x} +2}, \log_3 \brak{4\cdot3^x -1}$ are in A.P then $x$ equals}
+\begin{enumerate}[label={\arabic*.}]
+
+	\item {If $ 1, \log_9 \brak{3^{1-x} +2}, \log_3 \brak{4\cdot3^x -1}$ are in A.P then $x$ equals}
 {\hfill{\sbrak{2002}}}
 \begin{enumerate}
 \begin{multicols}{2}
@@ -86,7 +78,6 @@
 \item{$0$}
 \end{multicols}
 \end{enumerate}
-% minor edit
 \item {The value of $2^{\frac{1}{4}}\cdot 4^{\frac{1}{8}}\cdot 8^{\frac{1}{16}} \ldots \infty$ is}
 {\hfill{\sbrak{2002}}} 
 \begin{enumerate}
@@ -105,9 +96,8 @@
 \item  {$512$}
 \item  {$1024$}
 \item  {none of these}
-		\end{multicols}
+\end{multicols}
 \end{enumerate}
-
 \item {Sum of infinite number of terms of a GP is $20$ and sum of their square is $100$. The common ratio of GP is}
 {\hfill{\sbrak{2002}}} 
 \begin{enumerate}
@@ -228,6 +218,7 @@
 \item  {$\frac{11}{41}$}
 \end{multicols}
 \end{enumerate}
+
 \end{enumerate}
 
 \end{document}
