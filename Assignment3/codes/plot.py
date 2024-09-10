@@ -24,9 +24,13 @@ xp = data[0]
 yp = data[1]
 xq = data[2]
 yq = data[3]
+xa = data[4]
+ya = data[5]
+xb = data[6]
+yb = data[7]
 #Given points
-A = np.array(([-2, 0])).reshape(-1,1) 
-B = np.array(([0, 8])).reshape(-1,1) 
+A = np.array(([xa, ya])).reshape(-1,1) 
+B = np.array(([xb, yb])).reshape(-1,1) 
 P = np.array(([xp, yp])).reshape(-1,1) 
 Q = np.array(([xq, yq])).reshape(-1,1)
 
