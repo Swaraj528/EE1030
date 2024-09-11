@@ -34,15 +34,14 @@ int main() {
 		printf("Error opening file!\n");
 		return 1;
 	}
-	fprintf(file, "x\ty\t of P Q A B\n");
 	fprintf(file, "%.02lf\t", P[0][0]);
-	fprintf(file, "%.02lf\t", P[1][0]);                                                                                                
+	fprintf(file, "%.02lf\t\n", P[1][0]);                                                                                                
         fprintf(file, "%.02lf\t", Q[0][0]);                                                                                                                                                 
-        fprintf(file, "%.02lf\t", Q[1][0]);
+        fprintf(file, "%.02lf\t\n", Q[1][0]);
 	fprintf(file, "%.02lf\t", M[0][1]);                                                                                                                                                 
-        fprintf(file, "%.02lf\t", M[1][1]);
+        fprintf(file, "%.02lf\t\n", M[1][1]);
 	fprintf(file, "%.02lf\t", M[0][0]);                                                                                                                                                 
-        fprintf(file, "%.02lf\t", M[1][0]);
+        fprintf(file, "%.02lf\t\n", M[1][0]);
 	fclose(file);
 	printf("Results have been written to values.dat\n");
 

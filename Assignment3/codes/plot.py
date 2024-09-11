@@ -18,16 +18,16 @@ from triangle.funcs import *
 from conics.funcs import circ_gen
 
 
-data = np.loadtxt("values.dat", skiprows=1)  # Skip the header row
+data = np.loadtxt("values.dat")  
 
-xp = data[0]
-yp = data[1]
-xq = data[2]
-yq = data[3]
-xa = data[4]
-ya = data[5]
-xb = data[6]
-yb = data[7]
+xp = data[0,0]
+yp = data[0,1]
+xq = data[1,0]
+yq = data[1,1]
+xa = data[2,0]
+ya = data[2,1]
+xb = data[3,0]
+yb = data[3,1]
 #Given points
 A = np.array(([xa, ya])).reshape(-1,1) 
 B = np.array(([xb, yb])).reshape(-1,1) 
@@ -67,7 +67,6 @@ plt.legend(loc='best')
 '''
 plt.xlabel('X-Axis')
 plt.ylabel('Y-Axis')
-plt.title('Finding the points of trisection of A and B', loc = 'right', pad = 15)
 plt.grid() # minor
 plt.axis('equal')
 plt.savefig('/home/gvt/Documents/sdcard/github/EE1030/Assignment3/figs/fig1.png')
