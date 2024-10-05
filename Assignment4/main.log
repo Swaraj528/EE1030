@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.3)  5 OCT 2024 13:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.3)  5 OCT 2024 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1901,8 +1901,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+(./tables/table1.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
 
  []
 
@@ -1912,15 +1912,20 @@ File: /home/gvt1/Documents/sdcard/github/EE1030/Assignment4/figs/fig.png Graphi
 c file (type png)
 <use /home/gvt1/Documents/sdcard/github/EE1030/Assignment4/figs/fig.png>
 Package pdftex.def Info: /home/gvt1/Documents/sdcard/github/EE1030/Assignment4/
-figs/fig.png  used on input line 75.
+figs/fig.png  used on input line 79.
 (pdftex.def)             Requested size: 254.9356pt x 191.19699pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 [1{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive
 /2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
- </home/gvt1/Documents/sdcard/github/EE1030/Assignment4/figs/fig.png>] (./main.
-aux)
+]
+
+[2 </home/gvt1/Documents/sdcard/github/EE1030/Assignment4/figs/fig.png>]
+(./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1929,22 +1934,22 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 53689 strings out of 473579
- 1273814 string characters out of 5705599
- 1851100 words of memory out of 5000000
- 75767 multiletter control sequences out of 15000+600000
- 621907 words of font info for 167 fonts, out of 8000000 for 9000
+ 53707 strings out of 473579
+ 1274156 string characters out of 5705599
+ 1856100 words of memory out of 5000000
+ 75777 multiletter control sequences out of 15000+600000
+ 623257 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,13n,109p,1194b,893s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,16n,109p,1194b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></opt/texli
 ve/2024/texmf-dist/fonts/type1/public/txfonts/txex.pfb></opt/texlive/2024/texmf
 -dist/fonts/type1/public/txfonts/txsy.pfb></opt/texlive/2024/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></opt/texlive/2024/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></opt/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 112263 bytes).
+Output written on main.pdf (2 pages, 115847 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
