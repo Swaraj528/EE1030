@@ -1,0 +1,120 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\usepackage{multicol}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment 2 - EE1030}
+\author{ee24btech11018 - D. Swaraj Sharma}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\section{Section - A}
+\begin{enumerate}
+\item Let $M$ denote the median of the following frequency distributions.
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline 
+ Class & 0-4 & 4-8 & 8-12 & 12-16 & 16-20 \\
+		\hline
+ Frequency & 3 & 9 & 10 & 8 & 6 \\
+		\hline
+	\end{tabular}\\
+	Then $20 M$ is equal to:
+		\begin{enumerate}
+	\item $416$
+	\item $104$
+	\item $52$
+	\item $208$
+		\end{enumerate}
+	\item If $f\brak{x} = \mydet{2\cos^4x & 2\sin^4x & 3+\sin^2x \\ 3+2\cos^4x & 2\sin^4x & \sin^22x \\ 2\cos^4x & 3+\sin^4x & \sin^22x}$ then $\frac{1}{5}f^{\prime}\brak{0}$ is equal to 
+		\begin{enumerate}
+			\item $0$
+			\item $2$
+			\item $2$
+			\item $6$
+		\end{enumerate}
+	\item Let $A\brak{2, 3, 5}$ and $C\brak{-3, 4, -2}$ be opposite vertices of a parallelogram $ABCD$. If the diagonal $\overrightarrow{BD} = \hat{i}+2\hat{j}+3\hat{k}$ then the area of the parallelogram is equal to
+		\begin{enumerate}
+			\item $\frac{1}{2}\sqrt{410}$
+			\item $\frac{1}{2}\sqrt{474}$
+			\item $\frac{1}{2}\sqrt{586}$
+			\item $\frac{1}{2}\sqrt{306}$
+		\end{enumerate}
+	\item If $2\sin^3x + \sin 2x \cos x + 4\sin x - 4 = 0$ has exactly $3$ solutions in the interval $\sbrak{0,\frac{n\pi}{2}}, n \in \mathbb{N}$, then the roots of the equation $x^2+nx+\brak{n-3}=0$ belong to:
+		\begin{enumerate}
+			\item $\brak{0, \infty}$
+			\item $\brak{-\infty, 0}$
+			\item $\brak{-\frac{\sqrt{17}}{2}, \frac{\sqrt{17}}{2}}$
+			\item $\mathbb{Z}$
+		\end{enumerate}
+	\item Let $f:\sbrak{-\frac{\pi}{2}, \frac{\pi}{2}} \to \mathbb{R}$ be a differentiable function such that $f\brak{0}=\frac{1}{2}$. If the $\lim\limits_{x\to0} \frac{x\int_o^xf\brak{t}dt}{e^{x^2}-1}=\alpha$, then $8\alpha^2$ is equal to:
+		\begin{enumerate}
+			\item $16$
+			\item $2$
+			\item $1$
+			\item $4$
+		\end{enumerate}
+\end{enumerate}
+\section{Section - B}
+\begin{enumerate}
+	\item A group of $40$ students appeared in an examination of $3$ subjects - Mathematics, Physics \& Chemistry. It was found that all students passed in at least one of the subjects, $20$ students passed in Mathematics, $25$ students passed in Physics, $16$ students passed in Chemistry, at most $11$ students passed in both Mathematics and Physics, at most $15$ students passed in both Physics and Chemistry, at most $15$ students passed in both Mathematics and Chemistry. The maximum number of students passed in all the three subjects is 
+	\item If $d_1$ is the shortest distance between the lines $x + 1 = 2y = -12z$, $x = y + 2 = 6z - 6$ and $d_2$ is the shortest distance between the lines $\frac{x-1}{2}=\frac{y+8}{-7}=\frac{z-4}{5}$, $\frac{x-1}{2}=\frac{y-2}{1}=\frac{z-6}{-3}$, then the value of $\frac{32\sqrt{3d_1}}{d_2}$ is :
+	\item Let the latus rectum of the hyperbola $\frac{x^2}{9}-\frac{y^2}{b^2}=1$ subtend and angle of $\frac{\pi}{3}$ at the centre of the hyperbola. If $b^2$ is equal to $\frac{l}{m}\brak{1+\sqrt{n}}$, where $l$ and $m$ are the co-prime numbers, then $l^2+m^2+n^2$ is equal to
+	\item Let $A = \cbrak{1, 2, 3, \dots 7}$ and let $P\brak{A}$ denote the power set of $A$. If the number of functions $f:A\to P\brak{A}$ such that $a\in f\brak{a}$,$\forall a\in A$ is $m^n$, $m$ and $n\in\mathbb{N}$ and $m$ is least, then $m+n$ is equal to
+	\item The value $9\int_0^9\sbrak{\sqrt{\frac{10x}{x+1}}}dx$, where $\sbrak{t}$ denotes the greatest integer less than or equal to $t$, is 
+	\item Number of integral terms in the expansion of $\cbrak{7^{\brak{\frac{1}{2}}}+11^{\brak{\frac{1}{6}}}}^{824}$ is equal to
+	\item Let $y = y\brak{x}$ be the solution of the differential equation $\brak{1-x^2}dy=\sbrak{xy+\brak{x^3+2}\sqrt{3\brak{1-x^2}}}dx$, $-1<x<1$, $y\brak{0}=0$. If $y\brak{\frac{1}{2}}=\frac{m}{n}$, $m$ and $n$ are co-prime numbers, then $m+n$ is equal to 
+	\item Let $\alpha$, $\beta \in \mathbb{N}$ be the roots of the equation $x^2-70x+\lambda=0$, where $\frac{\lambda}{2},\frac{\lambda}{3}\notin \mathbb{N}$. if $\lambda$ assumes the minimum possible value, then $\frac{\brak{\sqrt{\alpha-1}+\sqrt{\beta-1}}\brak{\lambda+35}}{\abs{\alpha-\beta}}$ is equal to:
+	\item If the function $f\brak{x} = \begin{cases} \frac{1}{\abs{x}},& \abs{x}\geq2\\ ax^2+2b,& \abs{x}<2\end{cases}$ is differentiable on $\mathbb{R}$, then $48\brak{a+b}$ is equal to 
+	\item Let $\alpha=1^2+4^2+8^2+13^2+19^2+26^2+\cdots$ upto $10$ terms and $\beta=\sum\limits_{n=1}^{10}n^4$. If $4\alpha-\beta=55k+40$, then $k$ is equal to 
+\end{enumerate}
+
+\end{document}
