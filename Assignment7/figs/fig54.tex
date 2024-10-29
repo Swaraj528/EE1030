@@ -1,0 +1,32 @@
+
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\huge]
+\draw  (2.5,13.75) rectangle (6,7.25);
+\draw [<->, >=Stealth] (2.5,6.75) -- (6,6.75);
+\draw [<->, >=Stealth] (1.25,13.75) -- (1.25,7.25);
+\draw (1,13.75) to[short] (1.5,13.75);
+\draw (1,7.25) to[short] (1.5,7.25);
+\draw (2.5,7) to[short] (2.5,6.5);
+\draw (6,7) to[short] (6,6.5);
+\draw [->, >=Stealth] (4,10.5) -- (8.5,10.5);
+\draw [->, >=Stealth] (4,10.5) -- (4,15.5);
+\node [font=\LARGE] at (0.5,10.5) {};
+\node [font=\LARGE] at (3.5,15.5) {z};
+\node [font=\LARGE] at (0.25,10.5) {h};
+\node [font=\LARGE] at (4,6) {b};
+\node [font=\LARGE] at (8.5,10) {y};
+\node [font=\huge] at (6.5,15) {$V_z$};
+\draw (4.5,15.5) to[short] (4,15);
+\draw (4.5,15.5) to[short] (5,15);
+\draw (4,15) to[short] (4.5,15);
+\draw (4.25,15) to[short] (4.25,12.5);
+\draw (4.5,15) to[short] (5,15);
+\draw (4.75,15) to[short] (4.75,12.5);
+\draw (4.25,12.5) to[short] (4.75,12.5);
+\end{circuitikz}
+}%
+
+
+
