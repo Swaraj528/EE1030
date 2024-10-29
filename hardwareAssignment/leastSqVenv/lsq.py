@@ -32,7 +32,7 @@ B = np.loadtxt('hardwaretest.txt')
 Xv = np.hstack((np.ones((B.shape[0],1)),B[:,[1]],B[:,[1]]**2))
 Cv = B[:,[0]]
 Tv = B[:,[1]]
-plt.plot(T, X@n_lsq)
+plt.plot(Tv, Xv@n_lsq)
 plt.plot(Tv, Cv, 'k.')
 plt.ylabel('Output Voltage (V)')
 plt.xlabel('Temperature ($^{\circ}$C)')
