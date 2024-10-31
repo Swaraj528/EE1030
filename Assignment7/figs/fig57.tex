@@ -1,0 +1,56 @@
+\centering
+\resizebox{0.8\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (0.75,12.75) to[short] (0.75,8.5);
+\draw (10.5,13.25) to[short] (10.5,7.75);
+\draw [dashed] (0.75,12.75) -- (10.5,13.25);
+\draw [dashed] (0.75,8.5) -- (10.5,7.75);
+\draw (7,10.75) to[short] (7.25,10.5);
+\draw (-1.25,12.75) to[short] (-1.25,8.5);
+\draw [->, >=Stealth] (-1.25,12.75) -- (0.75,12.75);
+\draw [->, >=Stealth] (-1.25,8.5) -- (0.75,8.5);
+\draw [->, >=Stealth] (-1.25,8.75) -- (0.75,8.75);
+\draw [->, >=Stealth] (-1.25,9) -- (0.75,9);
+\draw [->, >=Stealth] (-1.25,9.25) -- (0.75,9.25);
+\draw [->, >=Stealth] (-1.25,9.5) -- (0.75,9.5);
+\draw [->, >=Stealth] (-1.25,9.75) -- (0.75,9.75);
+\draw [->, >=Stealth] (-1.25,10) -- (0.75,10);
+\draw [->, >=Stealth] (-1.25,10.25) -- (0.75,10.25);
+\draw [->, >=Stealth] (-1.25,10.5) -- (0.75,10.5);
+\draw [->, >=Stealth] (-1.25,10.75) -- (0.75,10.75);
+\draw [->, >=Stealth] (-1.25,11) -- (0.75,11);
+\draw [->, >=Stealth] (-1.25,11.25) -- (0.75,11.25);
+\draw [->, >=Stealth] (-1.25,11.5) -- (0.75,11.5);
+\draw [->, >=Stealth] (-1.25,11.75) -- (0.75,11.75);
+\draw [->, >=Stealth] (-1.25,12) -- (0.75,12);
+\draw [->, >=Stealth] (-1.25,12.25) -- (0.75,12.25);
+\draw [->, >=Stealth] (-1.25,12.5) -- (0.75,12.5);
+\draw (10.5,10.5) to[short] (13.25,13.25);
+\draw (10.5,10.5) to[short] (13.25,7.75);
+\draw [->, >=Stealth] (10.5,13.25) -- (13.25,13.25);
+\draw [->, >=Stealth] (10.5,7.75) -- (13.25,7.75);
+\draw [->, >=Stealth] (10.5,12.75) -- (12.75,12.75);
+\draw [->, >=Stealth] (10.5,12.25) -- (12.25,12.25);
+\draw [->, >=Stealth] (10.5,11.75) -- (11.75,11.75);
+\draw [->, >=Stealth] (10.5,11.25) -- (11.25,11.25);
+\draw [->, >=Stealth] (10.5,9.75) -- (11.25,9.75);
+\draw [->, >=Stealth] (10.5,9.25) -- (11.75,9.25);
+\draw [->, >=Stealth] (10.5,8.75) -- (12.25,8.75);
+\draw [->, >=Stealth] (10.5,8.25) -- (12.75,8.25);
+\draw [->, >=Stealth] (9.25,10.5) -- (9.25,11.5);
+\draw [short] (9.25,10.5) -- (10.5,10.5);
+\draw [short] (3.75,10.75) .. controls (3.5,11.25) and (5.5,11) .. (7.25,10.75);
+\draw [short] (3.75,10.75) .. controls (3.5,10.50) and (5.75,10.50) .. (7.25,10.75);
+\draw [<->, >=Stealth] (10,10.5) -- (10,7.75)node[pos=0.5, fill=white]{$h$};
+\draw [<->, >=Stealth] (10,13.25) -- (10,10.5)node[pos=0.5, fill=white]{$h$};
+\node [font=\normalsize] at (4,7.5) {streamline};
+\node [font=\normalsize] at (4,13.5) {streamline};
+\node [font=\normalsize] at (9,11.25) {$y$};
+\node [font=\normalsize] at (11.5,13.5) {$U_{\infty}$};
+\node [font=\normalsize] at (11.5,7.5) {$U_{\infty}$};
+\node [font=\normalsize] at (13.5,11.75) {$u = \frac{U_{\infty}}{h}y$};
+\node [font=\normalsize] at (13.5,9.25) {$u = -\frac{U_{\infty}}{h}y$};
+\node [font=\normalsize] at (-0.25,13) {$U_{\infty}$};
+\end{circuitikz}
+}

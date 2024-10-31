@@ -1,0 +1,28 @@
+
+\centering
+\resizebox{0.7\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (3.5,1.5) to[short] (4,1.5);
+\draw (3.5,3.25) to[short] (4,3.25);
+\draw (3.5,5) to[short] (4,5);
+\draw (3.5,6.75) to[short] (4,6.75);
+\draw (3.5,8.5) to[short] (4,8.5);
+\draw (3.5,10.25) to[short] (4,10.25);
+\draw  (4,11.75) rectangle (17,0);
+\draw (10.75,0) to[short] (10.75,-0.5);
+\draw [dashed] (4,8.5) .. controls (16,13.5) and (15.75,7.5) .. (17,0);
+\draw [dashed] (4,10.25) .. controls (11.5,8) and (16.5,6.25) .. (17,0);
+\draw [short] (4,6.75) .. controls (18.25,12.75) and (15.5,10) .. (17,0);
+\node [font=\large] at (10.75,-0.75) {$\frac{y}{s}$};
+\node [font=\large] at (17,-0.5) {$1$};
+\node [font=\large] at (4,-0.5) {$0$};
+\node [font=\large] at (3,3.25) {$0.4$};
+\node [font=\large] at (3,6.75) {$0.8$};
+\node [font=\large] at (3,10.25) {$1.2$};
+\node [font=\large] at (5.25,10.25) {$R$};
+\node [font=\large] at (6.5,7.5) {$P$};
+\node [font=\large] at (5.25,8.75) {$Q$};
+\node [font=\large] at (1.75,6.25) {$\frac{c_l}{C_L}$};
+\end{circuitikz}
+}%

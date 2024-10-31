@@ -59,7 +59,9 @@
 \renewcommand{\thetable}{\theenumi}
 \begin{enumerate}
 	\item Combustion between fuel \brak{octane} and oxidizer \brak{air} occurs inside a combustor with the following stoichiometric chemical reaction:
-			$2C_8H_{18}+\brak{25O_2+94N_2}\to16CO_2+18H_2O+94N_2$
+		\begin{align*}
+			2C_8H_{18}+\brak{25O_2+94N_2}\to16CO_2+18H_2O+94N_2
+		\end{align*}
 		The atomic weights of carbon $\brak{C}$, hydrogen $\brak{H}$, oxygen $\brak{O}$, and nitrogen $\brak{N}$ are $12$, $1$, $16$, and $14$, respectively. If the combustion takes place with the fuel to air ratio $0.028$, then the equivalence ratio of the fuel-oxidizer mixture is
 		\begin{enumerate}
 			\item $0.094$
@@ -67,14 +69,17 @@
 			\item $0.721$
 			\item $2.371$
 		\end{enumerate}
-	\item The von Mises yield criterion or the maximum distrotion energy criterion for a plane stress problem with $\sigma_1$ and $\sigma_2$ as the principal stresses in the plane, and $\sigma_3$ as the yield stress, requires
+	\item The von Mises yield criterion or the maximum distrotion energy criterion for a plane stress problem with $\sigma_1$ and $\sigma_2$ as the principal stresses in the plane, and $\sigma_Y$ as the yield stress, requires
 		\begin{enumerate}
-			\item $\sigma_1^2-\sigma_1\sigma_2+\sigma_2^2\leq\sigma_3^2$
-			\item $\abs{\sigma_1-\sigma_2} \leq \sigma_3$
-			\item $\abs{\sigma_1}\leq\sigma_3$
-			\item $\abs{\sigma_2}\leq\sigma_3$
+			\item $\sigma_1^2-\sigma_1\sigma_2+\sigma_2^2\leq\sigma_Y^2$
+			\item $\abs{\sigma_1-\sigma_2} \leq \sigma_Y$
+			\item $\abs{\sigma_1}\leq\sigma_Y$
+			\item $\abs{\sigma_2}\leq\sigma_Y$
 		\end{enumerate}
-	\item An Euler-Bernoulli beam having a rectangular cross-section, as shown in the figure, is subjected to a non-uniform bending moment along its length. $V_z = \frac{dM_y}{dx}$. The shear stress distribution $\tau_{xz}$ across its cross-section is given by
+	\item An Euler-Bernoulli beam having a rectangular cross-section, as shown in the figure, is subjected to a non-uniform bending moment along its length. $V_z = \frac{dM_y}{dx}$. The shear stress distribution $\tau_{xz}$ across its cross-section is given by 
+		\begin{figure}[!ht]
+			\input{figs/fig54.tex}
+		\end{figure}
 		\begin{enumerate}
 			\item $\tau_{xz} = \frac{V_z}{2l_y}\frac{z}{\brak{h/2}}$
 			\item $\tau_{xz} = \frac{V_z\brak{h/2}^2}{2l_y}\brak{1-\frac{z^2}{\brak{h/2}^2}}$
@@ -96,9 +101,9 @@
 			\item $2172 kN$
 		\end{enumerate}
 	\item For the control volume shown in the figure below, the velocities are measured both at the upstream and the downstream ends.
-		\begin{figure}
-			\input{figs/fig54.tex}
-		\end{figure}
+		\begin{figure}[h!]
+			\input{figs/fig57.tex}
+		\end{figure}\\
 		The flow of density $\rho$ is incompressible, two dimensional and steady. The pressure is $p_{\infty}$ over the entire surface of the control volume. The drag on the airfoil is given by,
 		\begin{enumerate}
 			\item $\frac{\rho U^2_{\infty}h}{3}$
@@ -106,14 +111,14 @@
 			\item $\frac{\rho U^2_{\infty}h}{6}$
 			\item $2\rho U^2_{\infty}h$
 		\end{enumerate}
-	\item A gas turbine engine operates with a constant area duct combustor with inlet and outlet stagnation temperatures $540 K$ and $1104 K$ respectively. Assume that the flow is one dimensional, incompressible and frictionless and that the heat addition is driving the flow inside the combustor. The pressure loss factor \brak{stagnation pressure loss non-dimensionalized by the inlet dynamic pressure} of the combustor is
+	\item A gas turbine engine operates with a constant area duct combustor with inlet and outlet stagnation temperatures $540 K$ and $1104 K$ respectively. Assume that the flow is one dimensional, incompressible and frictionless and that the heat addition is driving the flow inside the combustor. The pressure loss factor \brak{\text{stagnation pressure loss non-dimensionalized by the inlet dynamic pressure}} of the combustor is
 		\begin{enumerate}
 			\item $ 0$
 			\item $0.489$
 			\item $1.044$
 			\item $2.044$
 		\end{enumerate}
-	\item The diffuser of an airplane engine decelerates the airflow from the flight Mach number $0.85$ to compressor inlet Mach number $0.38$. Assume that the ratio of the specific heats is constant and equal to $1.4$. If the diffuser pressure recovery ratio is $0.92$, then the isentropic efficiency of the diffuser is
+	\item The diffuser of an airplane engine decelerates the airflow from the flight Mach number $0.85$ to the compressor inlet Mach number $0.38$. Assume that the ratio of the specific heats is constant and equal to $1.4$. If the diffuser pressure recovery ratio is $0.92$, then the isentropic efficiency of the diffuser is
 		\begin{enumerate}
 			\item $0.631$
 			\item $0.814$
@@ -121,7 +126,10 @@
 			\item $1.343$
 		\end{enumerate}
 	\item An airfoil section is known to generate lift when placed in a uniform stream of speed $U_{\infty}$ at an incident $\alpha$. A biplane consisting of two such sections of identical chord $c$, separated by a distance $h$ is shown in the following figure:
-FIG
+		\begin{figure}[h!]
+			\input{figs/fig60.tex}
+		\end{figure}
+
 		With regard to this biplane, which of the following statements is true?
 		\begin{enumerate}
 			\item Both the airfoils experience an upwash and increased approach velocity.
@@ -173,7 +181,9 @@ FIG
 			\item $J=2\pi r^4$
 		\end{enumerate}
 	\item An aerospace system shown in the following figure is designed in such a way that the expansion generated at A is completely absorbed by wall B for $p_l=p_d$, where $p_d$ corresponds to the design condition.
-		FIG
+		\begin{figure}[h!]
+			\input{figs/fig67.tex}
+		\end{figure}\\
 		For $p_1>p_{\infty}$ which of the following statements is NOT true?
 		\begin{enumerate}
 			\item For $p_l<p_d$, the expansion fan from A gets reflected from B as a compression wave
@@ -182,7 +192,9 @@ FIG
 			\item For $p_l>p_d$, B always sees an expansion
 		\end{enumerate}
 	\item The span-wise lift distribution for three wings is shown in the following figure:
-		FIG
+		\begin{figure}[h!]
+			\input{figs/fig68.tex}
+		\end{figure}\\
 		In the above figure, $c_l$ refers to the section list coefficient, $C_L$ refers to the lift coefficient of the wimd, $y$ is the coordinate along the span and $s$ is the span of the wing. A designer prefers to use a wing for which the stall begins at the root. Which of the wings will he choose?
 		\begin{enumerate}
 			\item P

@@ -1,0 +1,20 @@
+
+\centering
+\resizebox{0.3\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [short] (3.5,12) -- (3.5,11.5);
+\draw [short] (7.5,12) -- (7.5,11.5);
+\draw [<->, >=Stealth] (3.5,11.75) -- (7.5,11.75);
+\draw [short] (8.25,11.5) -- (8.75,11.5);
+\draw [<->, >=Stealth] (8.5,11.5) -- (8.5,7.5)node[pos=0.5, fill=white]{$h$};
+\draw [short] (8.25,7.5) -- (8.75,7.5);
+\node [font=\large] at (5.5,12.25) {$c$};
+\draw [short] (3.5,11.25) .. controls (3.5,10.75) and (5.5,11.25) .. (7.5,11.25);
+\draw [short] (3.5,11.25) .. controls (3.75,11.75) and (5.75,11.5) .. (7.5,11.25);
+\draw [short] (7.25,7.5) .. controls (5.25,7.5) and (4,7.25) .. (3.5,7.5);
+\draw [short] (3.5,7.5) .. controls (3.25,8.25) and (6,7.75) .. (7.25,7.5);
+\node [font=\large] at (5,10.75) {$B$};
+\node [font=\large] at (5,8.25) {$A$};
+\end{circuitikz}
+}
