@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.3)  5 NOV 2024 21:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.3)  6 NOV 2024 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,8 +993,12 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 <figs/fig1.png, id=176, 462.528pt x 346.896pt>
 File: figs/fig1.png Graphic file (type png)
 <use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png  used on input line 73.
+Package pdftex.def Info: figs/fig1.png  used on input line 64.
 (pdftex.def)             Requested size: 171.14764pt x 128.36009pt.
+
+Overfull \vbox (2.01868pt too high) detected at line 64
+ []
+
 
 
 [6
@@ -1007,14 +1011,14 @@ Package pdftex.def Info: figs/fig1.png  used on input line 73.
 <figs/fig.png, id=236, 462.528pt x 346.896pt>
 File: figs/fig.png Graphic file (type png)
 <use figs/fig.png>
-Package pdftex.def Info: figs/fig.png  used on input line 91.
+Package pdftex.def Info: figs/fig.png  used on input line 82.
 (pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{stemplot}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \end{frame}
+l.82 \end{frame}
                 
 
 [8
@@ -1091,10 +1095,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23933 strings out of 473579
- 449330 string characters out of 5705599
- 1268726 words of memory out of 5000000
- 46297 multiletter control sequences out of 15000+600000
+ 23931 strings out of 473579
+ 449314 string characters out of 5705599
+ 1281220 words of memory out of 5000000
+ 46295 multiletter control sequences out of 15000+600000
  566815 words of font info for 68 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  128i,15n,123p,396b,1382s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1109,7 +1113,7 @@ lic/amsfonts/cm/cmssi8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main.pdf (14 pages, 205260 bytes).
+Output written on main.pdf (14 pages, 204093 bytes).
 PDF statistics:
  488 PDF objects out of 1000 (max. 8388607)
  414 compressed objects within 5 object streams

@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-
 points = np.loadtxt("values.dat", delimiter=',', max_rows=len(list(open("./values.dat"))))
 centre=np.array([points[0][0],points[0][1]])
 xp = points[:2002, 0]

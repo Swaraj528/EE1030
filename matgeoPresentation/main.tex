@@ -32,38 +32,29 @@ Find the area of the region lying above the $X$ axis and included between the ci
 \end{frame}
 \begin{frame}
 \frametitle{Equations}
-Equation of a circle is of form $\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0$ with
+Equation of the circle is of form $\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0$ with
 \begin{align}
 	\vec{u}=\myvec{-4\\0}\\
-	f=\norm{\vec{u}}^2-r^2\\
+	f=\norm{\vec{u}}^2-r^2=0\\
 	\vec{V}=\myvec{1&0\\0&1}
 \end{align}
 \end{frame}
-
 \begin{frame}
 	\frametitle{Equations}
-Equation of parabola with directrix $\vec{n}^{\top}\vec{x}=c$ is given by,
+Equation of the parabola is of the form $vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0$ with
 \begin{align}
-	g\brak{\vec{x}}=\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0\\
-	\vec{V}=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}\\
-	\vec{u}=ce^2\vec{n}-\norm{\vec{n}}^2\vec{F}\\
-	f=\norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
-\end{align}
-and for the parabola $y^2=4x$, equation of directrix is, $\myvec{-1&0}\vec{x}=1$
-\begin{align}
-	\vec{V}&=\myvec{0&0\\0&1}\\
-	\vec{u}&=\myvec{-2\\0}\\
-	f&=0
+	\vec{V}=\myvec{0&0\\0&1}\\
+	f=0\\
+	\vec{u}=\myvec{-2\\0}
 \end{align}
 \end{frame}
-
 \begin{frame}
 	\frametitle{Solving}
 The intersection of two conics with parameters $\vec{V}_i,\vec{u}_i,f_i, i=1,2$ is defined as,
 \begin{align}
 	\vec{x}^{\top}\brak{\vec{V}_1-\vec{V}_2}\vec{x}+2\brak{\vec{u}_1-\vec{u_2}}^{\top}\vec{x}+\brak{f_1-f_2}=0
 \end{align} 
-On solving we get the points of intersection to be $\myvec{0\\0},\myvec{4\\4}.$
+On solving using the previous equations, we get the points of intersection to be $\myvec{0\\0},\myvec{4\\4}.$
 \begin{figure}[h!]
    \centering
    \includegraphics[width = 0.5\linewidth]{figs/fig1.png}
