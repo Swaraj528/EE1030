@@ -1,0 +1,198 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\usepackage{multicol}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment 8 - EE1030}
+\author{ee24btech11018 - D. Swaraj Sharma}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+	\item Suppose that $P_1$ and $P_2$ are two populations with equal prior probabilities having bivariate normal distributions with mean vectors $\brak{2, 3}$ and $\brak{1, 1}$, respectively. The variance-covariance matrix of both the distributions is the identity matrix. Let $z_1 = \brak{2.5, 2}$ and $z_2 = \brak{2, 1.5}$ be two new observations. According to Fisher's linear discriminant rule,
+		\begin{enumerate}
+			\item $z_1$ is assigned to $P_1$, and $z_2$ is assigned to $P_2$.
+			\item $z_1$ is assigned to $P_2$, and $z_2$ is assigned to $P_1$.
+			\item $z_1$ is assigned to $P_1$, and $z_2$ is assigned to $P_1$.
+			\item $z_1$ is assigned to $P_2$, and $z_2$ is assigned to $P_2$.
+		\end{enumerate}
+	\item Let $ X_1, \dots, X_n $ be a random sample from a population having probability density function $ f_X\brak{x; \theta} = \frac{2x}{\theta^2} $, $ 0 < x < \theta $. Then the method of moments estimator of $ \theta $ is
+		\begin{enumerate}
+			\item $\frac{3 \sum_{i=1}^{n} X_i}{2n}$
+			\item $\frac{3 \sum_{i=1}^{n} X^2_i}{2n}$
+			\item $\frac{\sum_{i=1}^{n} X_i}{2n}$
+			\item $\frac{3 \sum_{i=1}^{n} X_i\brak{X_i-1}}{2n}$
+		\end{enumerate}
+	\item Let $X$ be a normal random variable having mean $\theta$ and variance $1$, where $1 \leq \theta \leq 10$. Then $X$ is
+		\begin{enumerate}
+			\item sufficient but not complete.
+			\item the maximum likelihood estimator of $\theta$.
+			\item the uniformly minimum variance unbiased estimator of $\theta$.
+			\item complete and ancillary.
+		\end{enumerate}
+	\item Let $\{X_n\}_{n \geq 1}$ be a sequence of independent and identically distributed random variables with mean $\theta$ and variance $\theta$, where $\theta > 0$. Then $\frac{\sum_{i=1}^{n} X_i}{\sum_{i=1}^{n} X_i^2}$ is a consistent estimator of
+		\begin{enumerate}
+			\item $\frac{1}{1+\theta}$
+			\item $\frac{1+\theta}{\theta}$
+			\item $\frac{1}{\theta}$
+			\item $\frac{\theta}{1+\theta}$
+		\end{enumerate}
+	\item Let $X_1, \dots, X_{10}$ be a random sample from a population with probability density function 
+		\begin{align*}
+			f\brak{x; \theta} = \frac{e^{-\abs{x - \theta}}}{2}, -\infty < x < \infty, -\infty < \theta < \infty.
+		\end{align*}
+		Then the maximum likelihood estimator of $\theta$
+		\begin{enumerate}
+			\item does not exist.
+			\item is not unique.
+			\item is the sample mean.
+			\item is the smallest observation.
+		\end{enumerate}
+	\item Consider the model $Y_i = \beta + \epsilon_i$, where $\epsilon_i$'s are independent normal random variables with zero mean and know variance $\sigma_i^2>0$, for $i, \cdots, n$. Then the best linear unbiased estimator of the unknown parameter $\beta$ is
+		\begin{enumerate}
+			\item $\frac{\sum_{i=1}^{n}\brak{Y_i/\sigma_i^2}}{\sum_{i=1}^{n}\brak{1/\sigma_i^2}}$
+			\item $\frac{\sum_{i=1}^{n}Y_i}{n}$
+			\item $\frac{\sum_{i=1}^{n}Y_i/\sigma_i}{n}$
+			\item $\frac{\sum_{i=1}^{n}\brak{Y_i/\sigma_i}}{\sum_{i=1}^{n}\brak{1/\sigma_i}}$
+		\end{enumerate}
+	\item Let \brak{X, Y} be a bvariate random vector with the oribability density function 
+		\begin{align*}
+			f_{\brak{X, Y}}\brak{x,y} = \begin{cases} 
+				e^{-y}& 0 < x < y, \\
+				0& otherwise
+			\end{cases}
+		\end{align*}
+		Then the regression of $Y$ on $X$ is given by
+		\begin{enumerate}
+			\item $X+1$
+			\item $\frac{X}{2}$
+			\item $\frac{X}{2}$
+			\item $Y+1$
+		\end{enumerate}
+	\item Consider a discrete time Markov chain on the stage space \sbrak{1, 2} with one-step transistion probability matrix 	
+		\begin{align*}
+			\begin{array}{cc}
+				& \begin{array}{cc} 1 & 2 \end{array}\\
+					\begin{array}{c}
+						1 \\ 
+						2 
+					\end{array} &
+					\begin{bmatrix}
+						0.2 & 0.8 \\
+						0.3 & 0.7
+					\end{bmatrix}
+			\end{array}
+		\end{align*}
+		Then $\lim\limits_{n\to\infty}P^n$ is
+		\begin{enumerate}
+			\item $\begin{bmatrix} \frac{3}{11} & \frac{8}{11} \\ \frac{3}{11} & \frac{8}{11} \end{bmatrix}$
+				\item $\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$
+					\item $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$
+						\item $\begin{bmatrix} \frac{8}{11} & \frac{3}{11} \\ \frac{8}{11} & \frac{3}{11} \end{bmatrix}$
+		\end{enumerate}
+	\item Let $\brak{X_1, X_2}$ be a random vector with variance-covariance matrix $\begin{bmatrix} 4 & 0\\0 & 2\end{bmatrix}$. The two principal components are
+			\begin{enumerate}
+				\item $X_1$ and $X_2$
+				\item $-X_1$ and $X_2$
+				\item $X_1$ and $-X_2$
+				\item $X_1 + X_2$ and $X_2$
+			\end{enumerate}
+		\item Consider the objects $\sbrak{1, 2, 3, 4}$ with the distance matrix 
+			\begin{align*}
+				\begin{array}{cc}
+					& \begin{array}{c c c c} 1 & 2 & 3 & 4 \end{array}\\
+						\begin{array}{c}
+							1 \\ 
+							2 \\
+							3 \\
+							4
+						\end{array} &
+						\begin{bmatrix}
+							0 & 1 & 11 & 5 \\
+							1 & 0 & 2 & 3 \\
+							11 & 2 & 0 & 4 \\
+							5 & 3 & 4 & 0
+						\end{bmatrix}
+				\end{array}
+			\end{align*}
+Applying the single-linkage hierarchical procedure twice, the two clusters that result are
+\begin{enumerate}
+    \item $\cbrak{2, 3}$ and $\cbrak{1, 4}$
+    \item $\cbrak{1, 2, 3}$ and $\cbrak{4}$
+    \item $\cbrak{1, 3, 4}$ and $\cbrak{2}$
+    \item $\cbrak{2, 3, 4}$ and $\cbrak{1}$
+\end{enumerate}
+\item The maximum likelihood estimates of the mean vector and the variance-covariance matrix of a bivariate normal distribution based on the realization $\sbrak{\vec{1\\2}, \vec{4\\4}, \vec{4\\3}}$ of a random sample size 3 are given by
+\begin{enumerate}
+    \item $\begin{pmatrix} 3 \\ 3 \end{pmatrix}$ and $\begin{bmatrix} 2 & 1 \\ 1 & 2/3 \end{bmatrix}$
+    \item $\begin{pmatrix} 3 \\ 3 \end{pmatrix}$ and $\begin{bmatrix} 2 & 1 \\ 1 & 3/2 \end{bmatrix}$
+    \item $\begin{pmatrix} 3 \\ 3 \end{pmatrix}$ and $\begin{bmatrix} 3 & 3/2 \\ 3/2 & 2/3 \end{bmatrix}$
+    \item $\begin{pmatrix} 3 \\ 3 \end{pmatrix}$ and $\begin{bmatrix} 3 & 2/3 \\ 2/3 & 1 \end{bmatrix}$
+\end{enumerate}
+\item Consider a fixed effects one-way analysis of variance model $Y_{ij} = \mu + \tau_i + \epsilon_{ij}$, for $i = 1, \dots, a$, $j = 1, \dots, r$, and $\epsilon_{ij}$'s are independent and identically distributed normal random variables with mean zero and variance $\sigma^2$. Here, $r$ and $a$ are positive integers. Let $\bar{Y}_i = \frac{\sum_{j=1}^r Y_{ij}}{r}$. Then $\bar{Y}_i$ is the least squares estimator for
+\begin{enumerate}
+    \item $\mu + \frac{\tau_i}{2}$
+    \item $\tau_i$
+    \item $\mu + \tau_i$
+    \item $\mu$
+\end{enumerate}
+\item Let $A$ be a $n \times n$ positive semi-definite matrix with eigenvalues $\lambda_1 \geq \cdots \geq \lambda_n$, and with $\alpha$ as the maximum diagonal entry. We can find a vector $x$ such that $x^t x = 1$, where $t$ denotes the transpose, and
+\begin{enumerate}
+    \item $x^t A x > \lambda_1$
+    \item $x^t A x < \lambda_n$
+    \item $\lambda_n \leq x^t A x \leq \lambda_1$
+    \item $x^t A x > n \alpha$
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
